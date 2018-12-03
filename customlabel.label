@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>user_role_acc2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>user role</shortDescription>
+        <value>user role</value>
+    </labels>
+    <labels>
+        <fullName>view_selected_user_profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>view selected user profile</shortDescription>
+        <value>view selected user profile</value>
+    </labels>
+</CustomLabels>
