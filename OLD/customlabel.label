@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+<labels>
+        <fullName>SipMW_MP_select_account</fullName>
+        <categories>Meeting Works</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SipMW_MP_select_account</shortDescription>
+        <value>Select United Meetings Account</value>
+    </labels>
+    <labels>
+        <fullName>SipMW_MP_meeting_account_jet</fullName>
+        <categories>Meeting Works</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SipMW_MP_meeting_account_jet</shortDescription>
+        <value>Meetings Account</value>
+    </labels>
+    <labels>
+        <fullName>SipMW_MP_select_agreement</fullName>
+        <categories>Meeting Works</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SipMW_MP_select_agreement</shortDescription>
+        <value>Select United Meetings Agreement</value>
+    </labels>
+    <labels>
+        <fullName>SipMW_MP_select_agreement_jet</fullName>
+        <categories>Meeting Works</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SipMW_MP_select_agreement_jet</shortDescription>
+        <value>Meetings Agreement</value>
+    </labels>
+    <labels>
+        <fullName>SipMW_MP_debit_amount</fullName>
+        <categories>Meeting Works</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SipMW_MP_debit_amount</shortDescription>
+        <value>Debited Amount</value>
+    </labels>
+    <labels>
+        <fullName>SipMW_MP_payment_summary</fullName>
+        <categories>Meeting Works</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SipMW_MP_payment_summary</shortDescription>
+        <value>Payment Summary</value>
+    </labels>
+    <labels>
+        <fullName>SipMW_MP_total_owed</fullName>
+        <categories>Meeting Works</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SipMW_MP_total_owed</shortDescription>
+        <value>Total Amount Owed:</value>
+    </labels>
+    <labels>
+        <fullName>SipMW_MP_total_debit</fullName>
+        <categories>Meeting Works</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SipMW_MP_total_debit</shortDescription>
+        <value>Total Debited Amount:</value>
+    </labels>
+    <labels>
+        <fullName>SipMW_MP_total_debit_tooltip</fullName>
+        <categories>Meeting Works</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SipMW_MP_total_debit_tooltip</shortDescription>
+        <value>Total Debited Amount must equal the Total Cost.</value>
+    </labels>
+    <labels>
+        <fullName>SipMW_MP_total_owed_tooltip</fullName>
+        <categories>Meeting Works</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SipMW_MP_total_owed_tooltip</shortDescription>
+        <value>Difference between Total Debited Amount and Total Cost</value>
+    </labels>
+    <labels><fullName>SipMW_Restration_Search_Organization_Tips</fullName><language>en_US</language><protected>false</protected><shortDescription>SipMW_Restration_Search_Organization_Tips</shortDescription><value>you can search your organization/association, or add new organization/association if it does not exist</value></labels><labels><fullName>SipMW_Restration_CompanyType</fullName><language>en_US</language><protected>false</protected><shortDescription>SipMW_Restration_CompanyType</shortDescription><value>CompanyType</value></labels>
+    <labels>
+    <fullName>SipMW_Available_Products</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>SipMW_Available_Products</shortDescription>
+    <value>Available Products</value>
+    </labels>
+    <labels>
+    <fullName>SipMW_Additional_Products</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>SipMW_Additional_Products</shortDescription>
+    <value>Additional Products</value>
+    </labels>
+    <labels>
+    <fullName>SipMW_MeetingWorks_title</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>SipMW_MeetingWorks_title</shortDescription>
+    <value>MY MEETINGS</value>
+    </labels>
+
+    <labels>
+    <fullName>SipMW_Cant_specify_amount_larger_than_balance</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>SipMW_Cant_specify_amount_larger_than_balance</shortDescription>
+    <value>Can’t specify amount larger than the balance of agreement</value>
+    </labels>
+
+    <labels>
+    <fullName>SipMW_Cant_add_agreement_twice</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>SipMW_Cant_add_agreement_twice</shortDescription>
+    <value>Can’t add one agreement two times</value>
+    </labels>
+
+    <labels>
+    <fullName>SipMW_Agreement_submit_success</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>SipMW_Agreement_submit_success</shortDescription>
+    <value>Thank you, Your new agreement has been submitted for review.</value>
+    </labels>
+
+    <labels>
+    <fullName>SipMW_JSRegistration_InvalidEmail</fullName>
+    <language>en_US</language>
+    <protected>false</protected>
+    <shortDescription>SipMW_JSRegistration_InvalidEmail</shortDescription>
+    <value>You have entered an invalid email domain. Please enter a different email and the re-submit.</value>
+    </labels>
+</CustomLabels>
