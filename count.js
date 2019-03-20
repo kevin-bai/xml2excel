@@ -4,6 +4,7 @@ const json2excel = require('./util/json2excel');
 const walk = require('./util/walk')
 
 let allpages = [];
+console.log(allpages)
 
 // walk('./merge',function (pathname) {
 //     let file = path.parse(pathname)
