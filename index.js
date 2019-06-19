@@ -19,7 +19,11 @@ fs.readFile(__dirname + '/customlabel.label', {flag: 'r+', encoding: 'utf8'}, fu
         console.log(jsonResult)
         var json_data = jsonResult.CustomLabels.labels;
         json2excel(json_data,{
-            des_excel_name:'streamed-workbook2'
+            des_excel_name:'streamed-workbook3',
+            columns:[
+                { header: 'fullName', key: 'fullName' },
+                { header: 'value', key: 'value' },
+            ]
         })
     });
 });
