@@ -1,0 +1,53 @@
+<template>
+    <div class="slds-box slds-m-around_x-small security-wrapper" if:true={user}>
+        <h1 class="title">{label.Security}</h1>
+        <button if:false={editMode} title={label.Edit} onclick={editProfile} class="customButton left-right">
+         {label.Edit}
+        </button>
+        <template if:false={editMode}>
+            <div class="input-group">
+                <p class="blod">{label.Password}</p>
+                <!-- <p>{user.Name}</p> -->
+                <template if:true={user.Industry__c}>
+                    <p>{user.Industry__c}</p>
+                </template>
+                <template if:false={user.Industry__c}>
+                    <p class="light">**************</p>
+                </template>
+            </div>
+            <div class="input-group">
+                <p class="blod">{label.TwoFactorAuthentication}</p>
+                <template if:true={user.Interests__c}>
+                    <p>{user.Interests__c}</p>
+                </template>
+                <template if:false={user.Interests__c}>
+                    <p class="light">{label.NotEnabled}</p>
+                </template>
+            </div>
+        </template>
+        <template if:true={editMode}>
+            <div class="input-group">
+                <p class="blod">{label.Password}</p>
+                <lightning-input name="Password" max-length="255" variant="label-hidden"
+                                    onchange={handleChange}
+                                    class="slds-m-bottom_x-small">
+                </lightning-input>
+            </div>
+            <div class="input-group">
+                <p class="blod">{label.TwoFactorAuthentication}</p>
+                <p class="light">{label.NotEnabled}</p>
+                <!-- <lightning-input name="Two-Factor-Authentication" max-length="255" variant="label-hidden"
+                                value={user.Interests__c}
+                                onchange={handleChange}
+                                class="slds-m-bottom_x-small">
+                </lightning-input> -->
+            </div>
+        </template>
+
+        <div class="footer" if:true={editMode}>
+            <button  title={label.Cancel} onclick={cancelEdit} class="customButton">{label.Cancel}</button>
+            <button  title={label.Save} onclick={updateUser} class="customButton">{label.Save}</button>
+        </div>
+
+    </div>
+</template>

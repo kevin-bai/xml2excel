@@ -1,0 +1,53 @@
+<template>
+    <div class="container" if:true={user}>
+        <h1 class="title">{label.TellUsAboutYou}</h1>
+        <button if:false={editMode} title={label.Edit} onclick={editProfile} class="customButton left-right">
+         {label.Edit}
+        </button>
+        <template if:false={editMode}>
+            <div class="input-group">
+                <p class="blod">{label.Industry}</p>
+                <!-- <p>{user.Name}</p> -->
+                <template if:true={user.Industry__c}>
+                    <p>{user.Industry__c}</p>
+                </template>
+                <template if:false={user.Industry__c}>
+                    <p class="light">{label.NotProvided}</p>
+                </template>
+            </div>
+            <div class="input-group">
+                <p class="blod">{label.Interests}</p>
+                <template if:true={user.Interests__c}>
+                    <p>{user.Interests__c}</p>
+                </template>
+                <template if:false={user.Interests__c}>
+                    <p class="light">{label.NotProvided}</p>
+                </template>
+            </div>
+        </template>
+        <template if:true={editMode}>
+            <div class="input-group">
+                <p class="blod">{label.Industry}</p>
+                <lightning-input name="Industry" max-length="255" variant="label-hidden"
+                                    value={user.Industry__c}
+                                    onchange={handleChange}
+                                    class="slds-m-bottom_x-small">
+                </lightning-input>
+            </div>
+            <div class="input-group">
+                <p class="blod">{label.Interests}</p>
+                <lightning-input name="Interests" max-length="255" variant="label-hidden"
+                                value={user.Interests__c}
+                                onchange={handleChange}
+                                class="slds-m-bottom_x-small">
+                </lightning-input>
+            </div>
+        </template>
+
+        <div class="footer" if:true={editMode}>
+            <button  title={label.Cancel} onclick={cancelEdit} class="customButton">{label.Cancel}</button>
+            <button  title={label.Save} onclick={updateUser} class="customButton">{label.Save}</button>
+        </div>
+
+    </div>
+</template>

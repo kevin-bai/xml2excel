@@ -34,6 +34,10 @@ const fs = require('fs');
 const readdir = promisify(fs.readdir);
 const stat = promisify(fs.stat);
 
+const config = require('../config/count.config.js')
+
+console.log('config',config)
+
 /**
  * 基于async/await异步遍历文件夹所有文件
  * @param dir
@@ -43,7 +47,13 @@ async function walk(dir) {
     const subdirs = await readdir(dir);
     const files = await Promise.all(subdirs.map(async (subdir) => {
         const res = resolve(dir, subdir);
-        return (await stat(res)).isDirectory() ? walk(res) : res;
+
+        if(config.onlyCountDir){
+            return (await stat(res)).isDirectory() ? res : res;
+        }else{
+            return (await stat(res)).isDirectory() ? walk(res) : res;
+        }
+        
     }));
     return files.reduce((a, f) => a.concat(f), []);
 }

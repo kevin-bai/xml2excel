@@ -1,0 +1,37 @@
+.security-wrapper {
+  position: relative;
+}
+.left-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.customButton {
+  background: #d8d8d8;
+  border: none;
+  font-weight: 700;
+  color: #000;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.blod {
+  font-weight: bold;
+}
+.light {
+  color: #ccc;
+}
+
+.input-group {
+  margin: 10px 0;
+}
+
+.input-group p {
+  min-height: 19px;
+}

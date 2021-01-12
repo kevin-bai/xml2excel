@@ -1,0 +1,302 @@
+<template>
+    <div class="right">
+        <div class="slds-grid slds-wrap container">
+            <div class="slds-col slds-size_1-of-1">
+                <h2 class="page-title">{label.Products}</h2>
+            </div>
+        </div>
+        <div class="list-wrapper">
+            <div class="slds-grid slds-wrap container">
+                <div class="slds-col slds-size_2-of-3 slds-m-vertical_small">
+                    <span class="category-title">{label.Applications}</span>
+                </div>
+                <div class="slds-col slds-size_1-of-3 slds-m-vertical_small text-right">
+                    {label.Showing6OutOf20} | <strong><a>{label.SeeAllApplications}</a></strong> >
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap">
+                <div class="item-list slds-col slds-size_1-of-3">
+                    <div class="slds-box">
+                        <h2 class="title">
+                            <img src={icon_trimble} alt="" width="24" height="24" />
+                            {label.WebApplication}
+                        </h2>
+                        <p class="slds-m-vertical_x-small text-info">
+                            {label.ApplicationInfo1}
+                        </p>
+                        <p class="slds-m-vertical_x-small">
+                            <lightning-formatted-rich-text value={label.IncludedInPlanName}>
+                            </lightning-formatted-rich-text>
+                        </p>
+                        <div class="slds-clearfix slds-m-vertical_x-small">
+                            <div class="slds-float_left">
+                            <div class="category-icon"><img src={icon_learn} alt="" width="20" height="20" /></div>
+                            </div>
+                            <div class="slds-float_right">
+                                <button class="customButton">{label.Launch}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-list slds-col slds-size_1-of-3">
+                    <div class="slds-box">
+                        <h2 class="title">
+                            <img src={icon_trimble} alt="" width="24" height="24" />
+                            {label.DesktopApplication}
+                        </h2>
+                        <p class="slds-m-vertical_x-small text-info">
+                            {label.ApplicationInfo2}
+                        </p>
+                        <p class="slds-m-vertical_x-small">
+                            <lightning-formatted-rich-text value={label.IncludedInPlanName}>
+                            </lightning-formatted-rich-text>
+                        </p>
+                        <div class="slds-clearfix slds-m-vertical_x-small">
+                            <div class="slds-float_left">
+                            <div class="category-icon">
+                                <img src={icon_learn} alt="" width="20" height="20" />
+                                <img src={icon_devices} alt="" width="20" height="20" />
+                            </div>
+                            </div>
+                            <div class="slds-float_right">
+                                <button class="customButton">{label.Download}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-list slds-col slds-size_1-of-3">
+                    <div class="slds-box">
+                        <h2 class="title">
+                            <img src={icon_trimble} alt="" width="24" height="24" />
+                            {label.DesktopApplication}
+                        </h2>
+                        <p class="slds-m-vertical_x-small text-info">
+                            {label.ApplicationInfo3}
+                        </p>
+                        <p class="slds-m-vertical_x-small">
+                            <lightning-formatted-rich-text value={label.IncludedInPlanName}>
+                            </lightning-formatted-rich-text>
+                        </p>
+                        <div class="slds-clearfix slds-m-vertical_x-small">
+                            <div class="slds-float_left">
+                            <div class="category-icon">
+                                <img src={icon_learn} alt="" width="20" height="20" />
+                                <img src={icon_devices} alt="" width="20" height="20" />
+                            </div>                           </div>
+                            <div class="slds-float_right">
+                                <button class="customButton">{label.Download}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-list slds-col slds-size_1-of-3">
+                    <div class="slds-box">
+                        <h2 class="title">
+                            <img src={icon_trimble} alt="" width="24" height="24" />
+                            {label.DesktopApplication}
+                        </h2>
+                        <p class="slds-m-vertical_x-small text-info">
+                            {label.ApplicationInfo3}
+                        </p>
+                        <p class="slds-m-vertical_x-small">
+                            <lightning-formatted-rich-text value={label.IncludedInPlanName}>
+                            </lightning-formatted-rich-text>
+                        </p>
+                        <div class="slds-clearfix slds-m-vertical_x-small">
+                            <div class="slds-float_left">
+                            <div class="category-icon">
+                                <img src={icon_learn} alt="" width="20" height="20" />
+                                <img src={icon_devices} alt="" width="20" height="20" />
+                            </div>                           </div>
+                            <div class="slds-float_right">
+                                <button class="customButton">{label.Download}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-list slds-col slds-size_1-of-3">
+                    <div class="slds-box">
+                        <h2 class="title">
+                            <img src={icon_trimble} alt="" width="24" height="24" />
+                            {label.WebApplication}
+                        </h2>
+                        <p class="slds-m-vertical_x-small text-info">
+                            {label.ApplicationInfo1}
+                        </p>
+                        <p class="slds-m-vertical_x-small">
+                            <lightning-formatted-rich-text value={label.IncludedInPlanName}>
+                            </lightning-formatted-rich-text>
+                        </p>
+                        <div class="slds-clearfix slds-m-vertical_x-small">
+                            <div class="slds-float_left">
+                            <div class="category-icon"><img src={icon_learn} alt="" width="20" height="20" /></div>
+                            </div>
+                            <div class="slds-float_right">
+                                <button class="customButton">{label.Launch}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-list slds-col slds-size_1-of-3">
+                    <div class="slds-box">
+                        <h2 class="title">
+                            <img src={icon_trimble} alt="" width="24" height="24" />
+                            {label.WebApplication}
+                        </h2>
+                        <p class="slds-m-vertical_x-small text-info">
+                            {label.ApplicationInfo2}
+                        </p>
+                        <p class="slds-m-vertical_x-small">
+                            <lightning-formatted-rich-text value={label.IncludedInPlanName}>
+                            </lightning-formatted-rich-text>
+                        </p>
+                        <div class="slds-clearfix slds-m-vertical_x-small">
+                            <div class="slds-float_left">
+                            <div class="category-icon">
+                                <img src={icon_learn} alt="" width="20" height="20" />
+                            </div>
+                            </div>
+                            <div class="slds-float_right">
+                                <button class="customButton">{label.Launch}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list-wrapper devices-list">
+            <div class="slds-grid slds-wrap container">
+                <div class="slds-col slds-size_2-of-3 slds-m-vertical_small">
+                    <span class="category-title">Devices</span>
+                </div>
+                <div class="slds-col slds-size_1-of-3 slds-m-vertical_small text-right">
+                    Showing 6 out of 7 | <strong><a>See all Devices</a></strong> >
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap">
+                <div class="item-list slds-col slds-size_1-of-3">
+                    <div class="slds-box">
+                        <h2 class="title">
+                            <img src={icon_trimble} alt="" width="24" height="24" />
+                            Devices Name
+                        </h2>
+                        <p class="slds-m-vertical_x-small">Part Number ABCDEFG1234567</p>
+                        <p class="slds-m-vertical_x-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                        <p class="slds-m-vertical_x-small">Included in <a>Plan Name</a></p>
+                        <div class="slds-clearfix slds-m-vertical_x-small">
+                            <div class="slds-float_left">
+                            <div class="category-icon">
+                                <img src={icon_warranty} alt="" width="20" height="20" />
+                                <img src={icon_maintenance} alt="" width="20" height="20" />
+                            </div>
+                            </div>
+                            <div class="slds-float_right">
+                                <button class="customButton">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-list slds-col slds-size_1-of-3">
+                    <div class="slds-box">
+                        <h2 class="title">
+                            <img src={icon_trimble} alt="" width="24" height="24" />
+                            Devices Name
+                        </h2>
+                        <p class="slds-m-vertical_x-small">Part Number ABCDEFG1234567</p>
+                        <p class="slds-m-vertical_x-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                        <p class="slds-m-vertical_x-small">Included in <a>Plan Name</a></p>
+                        <div class="slds-clearfix slds-m-vertical_x-small">
+                            <div class="slds-float_left">
+                            <div class="category-icon">
+                                <img src={icon_warranty} alt="" width="20" height="20" />
+                            </div>
+                            </div>
+                            <div class="slds-float_right">
+                                <button class="customButton">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-list slds-col slds-size_1-of-3">
+                    <div class="slds-box">
+                        <h2 class="title">
+                            <img src={icon_trimble} alt="" width="24" height="24" />
+                            Devices Name
+                        </h2>
+                        <p class="slds-m-vertical_x-small">Part Number ABCDEFG1234567</p>
+                        <p class="slds-m-vertical_x-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                        <p class="slds-m-vertical_x-small">Included in <a>Plan Name</a></p>
+                        <div class="slds-clearfix slds-m-vertical_x-small">
+                            <div class="slds-float_left">
+                            <div class="category-icon"></div>
+                            </div>
+                            <div class="slds-float_right">
+                                <button class="customButton">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-list slds-col slds-size_1-of-3">
+                    <div class="slds-box">
+                        <h2 class="title">
+                            <img src={icon_trimble} alt="" width="24" height="24" />
+                            Devices Name
+                        </h2>
+                        <p class="slds-m-vertical_x-small">Part Number ABCDEFG1234567</p>
+                        <p class="slds-m-vertical_x-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                        <p class="slds-m-vertical_x-small">Included in <a>Plan Name</a></p>
+                        <div class="slds-clearfix slds-m-vertical_x-small">
+                            <div class="slds-float_left">
+                            <div class="category-icon">
+                                <img src={icon_warranty} alt="" width="20" height="20" />
+                                <img src={icon_maintenance} alt="" width="20" height="20" />
+                            </div>
+                            </div>
+                            <div class="slds-float_right">
+                                <button class="customButton">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-list slds-col slds-size_1-of-3">
+                    <div class="slds-box">
+                        <h2 class="title">
+                            <img src={icon_trimble} alt="" width="24" height="24" />
+                            Devices Name
+                        </h2>
+                        <p class="slds-m-vertical_x-small">Part Number ABCDEFG1234567</p>
+                        <p class="slds-m-vertical_x-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                        <p class="slds-m-vertical_x-small">Included in <a>Plan Name</a></p>
+                        <div class="slds-clearfix slds-m-vertical_x-small">
+                            <div class="slds-float_left">
+                            <div class="category-icon"><img src={icon_warranty} alt="" width="20" height="20" /></div>
+                            </div>
+                            <div class="slds-float_right">
+                                <button class="customButton">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-list slds-col slds-size_1-of-3">
+                    <div class="slds-box">
+                        <h2 class="title">
+                            <img src={icon_trimble} alt="" width="24" height="24" />
+                            Devices Name
+                        </h2>
+                        <p class="slds-m-vertical_x-small">Part Number ABCDEFG1234567</p>
+                        <p class="slds-m-vertical_x-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                        <p class="slds-m-vertical_x-small">Included in <a>Plan Name</a></p>
+                        <div class="slds-clearfix slds-m-vertical_x-small">
+                            <div class="slds-float_left">
+                            <div class="category-icon"></div>
+                            </div>
+                            <div class="slds-float_right">
+                                <button class="customButton">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,22 @@
+<template>
+    <div class="container">
+        <div class="title">Profile</div>
+
+        <ul class="menu-list">
+            <li class={basicActiveClass} onclick={linkTo} data-url="/mytrimble/s/trimbleprofile">Basic</li>
+            <li class={signinActiveClass} onclick={linkTo} data-url="/mytrimble/s/trimbleprofile/signin">Sign In &amp; Security</li>
+            <li class={dataPrivacyClass} onclick={linkTo} data-url="/mytrimble/s/trimbleprofile/data-and-privacy">Data &amp; Privacy</li>
+            <li class={preferencesActiveClass} onclick={linkTo} data-url="/mytrimble/s/trimbleprofile/preferences" >Preferences</li>
+        </ul>
+    
+        <hr>
+    
+        <div class="sub-title">How can we help?</div>
+        <ul class="sub-menu-list">
+            <li><a>Why can't I change my email?</a></li>
+            <li><a>Troubleshoot profile issues</a></li>
+            <li><a>Visit Help Center</a></li>
+        </ul>
+    </div>
+
+</template>

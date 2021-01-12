@@ -14,7 +14,7 @@ function json2excel(jsonArr,option) {
     let defaultColumns = [
         { header: Object.keys(jsonArr[0])[0], key: Object.keys(jsonArr[0])[0] }
     ]
-    let workbookName = `./${option.des_excel_name}.xlsx` || defaulWorkbookName;
+    let workbookName = `./dist/${option.des_excel_name}.xlsx` || defaulWorkbookName;
     let columns = option.columns || defaultColumns;
     let workbook = new Excel.stream.xlsx.WorkbookWriter({
         filename: workbookName

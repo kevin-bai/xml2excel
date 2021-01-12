@@ -1,0 +1,21 @@
+<template>
+    <div class="container">
+        <div class="title">{label.Admin}</div>
+
+        <ul class="menu-list">
+            <li class="" onclick={linkTo} data-url="">{label.BillingPayment}</li>
+            <li class="active" onclick={linkTo} data-url="">{label.ManageSubscriptions}</li>
+            <li class={dataPrivacyClass} onclick={linkTo} data-url="">{label.ManageUsers}</li>
+        </ul>
+    
+        <hr>
+    
+        <div class="sub-title">{label.HowCanWeHelp}</div>
+        <ul class="sub-menu-list">
+            <li><a>{label.Howdowedisablerenewal}</a></li>
+            <li><a>{label.TroubleshootAdminIssues}</a></li>
+            <li><a>{label.VisitHelpCenter}</a></li>
+        </ul>
+    </div>
+
+</template>

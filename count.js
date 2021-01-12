@@ -5,11 +5,9 @@ const walk = require('./util/walk')
 
 let allpages = [];
 
-// walk('./merge',function (pathname) {
-//     let file = path.parse(pathname)
-//     allpages.push({pathname:file.base})
-// })
-walk('./merge').then(function (files) {
+const sourceDir = './countingDir';
+
+walk(sourceDir).then(function (files) {
     console.log('files',files)
     allpages = files.map(item =>{
         let file = path.parse(item)
